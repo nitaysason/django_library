@@ -8,7 +8,7 @@ urlpatterns = [
 
     path('login/', TokenObtainPairView.as_view()),
     path('register/', views.register),
-    # path('librarian/', views.LibrarianView.as_view()),
-    
+    #  path('librarian/', views.LibrarianView.as_view()),
+    path('librarian/', views.librarian_view),
     path('librarian/<int:id>', views.librarian_view),
 ]
